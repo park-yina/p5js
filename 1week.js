@@ -20,12 +20,13 @@ this.y+=random(-5,5);
   }
   display(){
     textSize(20);
-    fill("fae");
     if((this.x>=width-5)||(this.y>=height-5)){
       background("black");
+      fill("white");
       text('The End',width/2,height/2);
       return 0;
     }
+    fill("white");
     text('good',this.x,this.y);
     text('bad',this.y,this.x);
   
